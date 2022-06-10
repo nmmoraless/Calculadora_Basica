@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --colorClaroFondo: rgb(59 70 100);
+    --colorClaroInterno: rgb(37 45 68);
+    --colorOscuro: rgb(24 31 50);
+    --letrasBlancas: #ffffff;
+    --colorRojo: rgb(209 63 48);
+    --colorClaroBtn: rgb(99 114 153);
+}
+

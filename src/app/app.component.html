@@ -1,0 +1,96 @@
+<header>
+  <div class="px-3 py-2 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calculator" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="3" width="16" height="18" rx="2" />
+            <rect x="8" y="7" width="8" height="3" rx="1" />
+            <line x1="8" y1="14" x2="8" y2="14.01" />
+            <line x1="12" y1="14" x2="12" y2="14.01" />
+            <line x1="16" y1="14" x2="16" y2="14.01" />
+            <line x1="8" y1="17" x2="8" y2="17.01" />
+            <line x1="12" y1="17" x2="12" y2="17.01" />
+            <line x1="16" y1="17" x2="16" y2="17.01" />
+          </svg>
+          <h3>{{title}}</h3>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+          <li>
+            <a href="#" class="nav-link text-secondary">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
+              Orders
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+              Customers
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container-C">
+    <div class="contorno-calculadora">
+        <p class="t-right m-0 blanco">1 &nbsp;&nbsp;2 &nbsp;&nbsp;3</p>
+        <header class="d-flex-C">
+            <h1 class="m-0 blanco">casio</h1>
+            <div class="d-flex-C">
+                <p class="m-right upperCase m-0 blanco">theme</p>
+                <div class="check"> 
+                    <div class="point"></div>
+                </div>
+            </div>
+        </header>
+
+          <input class="cajaResultados" type="text" [(ngModel)]='subtotal' placeholder="{{placeholder}}"  readonly>
+
+
+        <section class="numeros">
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="7" readonly>
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="8" readonly>
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="9" readonly>
+            <input class="btn-4 blue" value="DEL" (click)="borrar()" readonly>
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="4" readonly>
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="5" readonly>
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="6" readonly>
+            <input class="btn-4" value="+" (click)="suma()" readonly>
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="1" readonly>
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="2" readonly>
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="3" readonly>
+            <input class="btn-4" value="-" (click)="restar()" readonly>
+            <input class="btn-4" value="." (click)="obtenerValor($event)" value="." readonly>
+            <input type="text" class="btn-4" (click)="obtenerValor($event)" value="0" readonly>
+            <input class="btn-4" value="/" (click)="dividir()" readonly>
+            <input class="btn-4" value="*" (click)="multiplicar()" readonly>
+            <input class="btn-reset blue" (click)="reiniciar()" value="RESET" readonly>
+            <input class="btn-igual red" (click)="resultado()" value="=" readonly>
+        </section>
+    </div>
+    
+</div>
+</main>
